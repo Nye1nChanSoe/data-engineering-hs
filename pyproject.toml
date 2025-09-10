@@ -5,7 +5,9 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "faker>=37.6.0",
     "numpy>=2.3.2",
     "pandas>=2.3.2",
     "pyspark>=4.0.1",
+    "tqdm>=4.67.1",
 ]
