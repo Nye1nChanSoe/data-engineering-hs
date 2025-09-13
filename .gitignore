@@ -13,6 +13,11 @@ wheels/
 logs
 data
 tmp
-*.json
 *.csv
 *.gz
+
+# My notes
+notes.txt
+
+# linter
+.ruff_cache
