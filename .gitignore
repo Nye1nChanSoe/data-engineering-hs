@@ -18,6 +18,8 @@ tmp
 
 # My notes
 notes.txt
+spark.txt
+hadoop.txt
 
 # linter
 .ruff_cache
