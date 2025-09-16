@@ -1,0 +1,5 @@
+*.log
+.venv
+.ruff_cache
+__pycache__
+*.csv
