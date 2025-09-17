@@ -87,7 +87,7 @@ def fetch_order_item(id: int):
 
             # 429 - too many requests
             if res.status_code == 429:
-                retry_after = res.headers.get("retry-after", 1)
+                retry_after = int(res.headers.get("retry-after", 1))
                 logger.warning(
                     f"Rate_Limit {res.status_code} - attempt={attempts} - endpoint=/item/{id}"
                 )

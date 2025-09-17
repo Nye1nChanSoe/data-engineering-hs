@@ -20,6 +20,7 @@ tmp
 notes.txt
 spark.txt
 hadoop.txt
+concurrent.txt
 
 # linter
 .ruff_cache
