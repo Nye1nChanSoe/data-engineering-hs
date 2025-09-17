@@ -1,0 +1,23 @@
+services:
+  # PostgreSQL Database
+  db:
+    image: postgres:17
+    container_name: pg_database_hs_de_lab
+    environment:
+      POSTGRES_USER: dev_
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_DB: hs_de_lab
+    ports:
+      - "5433:5432" # already have db instance running for my other project in port 5432
+    volumes:
+      - postgres_data_hs_web_dev:/var/lib/postgresql/data
+      - ./data:/data
+    healthcheck:
+      test:
+        ["CMD-SHELL", "pg_isready -U dev_ -d hs_de_lab -h localhost -p 5432"]
+      interval: 60s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres_data_hs_web_dev:
