@@ -1,0 +1,10 @@
+services:
+  clickhouse:
+    container_name: clickhouse_hs_de_lab
+    image: clickhouse/clickhouse-server:head-alpine
+    restart: unless-stopped
+    ports:
+      - 8123:8123
+    environment:
+      CLICKHOUSE_USER: hsuadmin
+      CLICKHOUSE_PASSWORD: hsu123

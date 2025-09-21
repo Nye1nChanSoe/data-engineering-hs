@@ -1,0 +1,25 @@
+services:
+  redis:
+    container_name: "redis_hs_de_lab"
+    image: redis:latest
+    restart: unless-stopped
+    ports:
+      - 6379:6379
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+
+  redis-commander:
+    container_name: "redis_commander_hs_de_lab"
+    image: rediscommander/redis-commander:latest
+    restart: unless-stopped
+    platform: linux/amd64
+    depends_on:
+      redis:
+        condition: service_healthy
+    ports:
+      - 8081:8081
+    environment:
+      - REDIS_HOSTS=local:redis:6379

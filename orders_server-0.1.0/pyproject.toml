@@ -11,6 +11,8 @@ dependencies = [
     "ratelimit>=2.2.1",
     "slowapi>=0.1.9",
     "uvicorn>=0.35.0",
+    "aiofiles==24.1.0",
+    "aiolimiter==1.2.1",
 ]
 
 [project.scripts]

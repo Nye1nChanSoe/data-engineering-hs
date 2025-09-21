@@ -1,0 +1,5 @@
+*.ddb
+*.wal
+*.duckdb
+*.db
+*.parquet

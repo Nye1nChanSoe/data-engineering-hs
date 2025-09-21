@@ -1,0 +1,4 @@
+customer_id,first_name,last_name,house,signup_date
+1,Harry,Potter,Gryffindor,1996-09-01
+2,Hermione,Granger,Gryffindor,1996-09-01
+3,Draco,Malfoy,Slytherin,1996-09-01

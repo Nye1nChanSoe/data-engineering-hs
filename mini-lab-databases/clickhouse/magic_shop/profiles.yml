@@ -1,0 +1,13 @@
+magic_shop:
+  target: dev
+  outputs:
+    dev:
+      type: clickhouse
+      host: localhost
+      port: 8123
+      user: hsuadmin
+      password: hsu123
+      secure: False
+      verify: False
+      schema: raw
+      threads: 4

@@ -21,6 +21,10 @@ notes.txt
 spark.txt
 hadoop.txt
 concurrent.txt
+pipeline.txt
 
 # linter
 .ruff_cache
+
+# allow the csv seeders for dbt
+!mini-lab-databases/clickhouse/magic_shop/seeds/*.csv

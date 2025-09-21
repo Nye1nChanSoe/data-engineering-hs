@@ -1,0 +1,15 @@
+version: 2
+
+# raw tables already exists in warehouse
+# source('raw', 'customers') in SQL
+sources:
+  - name: raw                 # source name (used in source() calls)
+    database: raw             # db/schema name where raw tables live (ClickHouse: db)
+    schema: raw               # (optional, depending on adapter — often needed in Postgres/BigQuery)
+    tables:
+      - name: customers
+        description: "Raw customer data"
+      - name: orders
+        description: "Raw orders data"
+      - name: payments
+        description: "Raw payments data"

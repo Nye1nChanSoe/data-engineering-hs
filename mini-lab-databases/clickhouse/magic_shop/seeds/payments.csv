@@ -1,0 +1,4 @@
+payment_id,order_id,method,paid_galleons,paid_at
+5001,1001,card,120.0,1997-03-01 09:02:33
+5002,1003,vault,750.0,1997-03-06 08:16:01
+5003,1004,owl_check,200.0,1997-03-09 18:23:10
