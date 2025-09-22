@@ -22,6 +22,7 @@ spark.txt
 hadoop.txt
 concurrent.txt
 pipeline.txt
+airflow.txt
 
 # linter
 .ruff_cache
