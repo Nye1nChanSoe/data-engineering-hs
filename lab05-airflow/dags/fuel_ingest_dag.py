@@ -14,7 +14,6 @@ from __future__ import annotations
 
 import os
 import re
-import json
 import shutil
 import logging
 from datetime import datetime
