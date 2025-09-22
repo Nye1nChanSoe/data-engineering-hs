@@ -1,0 +1,21 @@
+CREATE TABLE IF NOT EXISTS fuel_sales (
+  transaction_id   text PRIMARY KEY,
+  station_id       integer NOT NULL,
+  dock             jsonb,
+  ship_name        text,
+  franchise        text,
+  captain_name     text,
+  species          text,
+  fuel_type        text,
+  fuel_units       double precision,
+  price_per_unit   numeric(8,2),
+  total_cost       numeric(12,2),
+  services         text[],
+  is_emergency     boolean,
+  visited_at       timestamptz,
+  arrival_date     date,
+  coords_x         double precision,
+  coords_y         double precision,
+  source_file      text,
+  loaded_at        timestamptz DEFAULT now()
+);
