@@ -23,6 +23,7 @@ hadoop.txt
 concurrent.txt
 pipeline.txt
 airflow.txt
+kafka.txt
 
 # linter
 .ruff_cache
